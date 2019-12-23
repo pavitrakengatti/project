@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+        <div class="w3-container w3-blue">
+        <h1>Transfer Amount</h1>
+    <p style="text-align: right;"><button type="button" (click)="submit()" class="btn btn-primary"><b>Back</b></button></p>
+        </div><br><br><br><br>
+
+<div class="container">
+<form action="/action_page.php">
+    <div class="form-group">
+      <label for="mobileNo">Mobile Number</label>
+      <input type="number" class="form-control" id="mobileNo" maxlength="12" [(ngModel)]="mobileNo" placeholder="Enter mobile Number" name="mobileNo">
+    </div>
+    <div class="form-group">
+      <label for="amt">Amount</label>
+      <input type="number" class="form-control" id="amt" [(ngModel)]="amt" placeholder="Enter Amount" name="amt">
+    </div>
+  <!--   <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>-->
+    <button type="submit" (click)="submit1()" class="btn btn-primary">Transfer</button>&nbsp;&nbsp;
+    <button type="submit" (click)="submit2()" class="btn btn-danger">Cancel</button>
+  </form>
+</div>
+
+</body>
+</html>
+
